@@ -1,7 +1,7 @@
 "use strict";
 
 // Подключаем модули
-const { src, dest } = require('gulp');
+const {src, dest} = require('gulp');
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps'); // благодаря ему в браузере видим не минифицированный код, а привычную разметку
 const autoprefixer = require('gulp-autoprefixer'); // расставляет префиксы для поддержки свойств в разных браузерах
@@ -26,30 +26,27 @@ const distPath = 'dist/';
 const path = {
     // Исходные файлы. С этими файлами мы будем работать
     src: {
-        html: srcPath + "*.html",
-        js: srcPath + "assets/js/*.js",
-        css: srcPath + "assets/scss/**/*.scss",
-        images: srcPath + "assets/images/**/*.{jpeg,jpg,png,svg,webp}",
-        video: srcPath + "assets/video/**/*",
-        fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        html:   srcPath + "*.html",
+        js:     srcPath + "assets/js/*.js",
+        css:    srcPath + "assets/scss/**/*.scss",
+        images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg,otf}"
     },
     // В эти папки будут собираться файлы
     build: {
-        html: distPath,
-        js: distPath + "assets/js/",
-        css: distPath + "assets/css/",
+        html:   distPath,
+        js:     distPath + "assets/js/",
+        css:    distPath + "assets/css/",
         images: distPath + "assets/images/",
-        video: distPath + "assets/video/",
-        fonts: distPath + "assets/fonts/"
+        fonts:  distPath + "assets/fonts/"
     },
     // За этими файлами мы будем следить. При изменении этих файлов бдет перезагружаться браузер
     watch: {
-        html: srcPath + "**/*.html",
-        js: srcPath + "assets/js/**/*.js",
-        css: srcPath + "assets/scss/**/*.scss",
+        html:   srcPath + "**/*.html",
+        js:     srcPath + "assets/js/**/*.js",
+        css:    srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        video: srcPath + "assets/video/**/*",
-        fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg,otf}"
     },
     clean: "./" + distPath
 }
@@ -75,24 +72,24 @@ function serve() {
 
 // HTML
 function html(cb) {
-    return src(path.src.html, { base: srcPath })
-        //.pipe() - Это 1 конкретное действие, которое мы хотим совершить над нашими файлами.
+    return src(path.src.html, {base: srcPath})
+         //.pipe() - Это 1 конкретное действие, которое мы хотим совершить над нашими файлами.
         .pipe(plumber())
         .pipe(dest(path.build.html))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
 
 // CSS
 function css(cb) {
-    return src(srcPath + 'assets/scss/main.scss')  // return src(path.src.css, {base: srcPath + 'assets/scss/'})
+    return src(srcPath + 'assets/scss/style.scss') // если порядок файлов не важен, то: return src(path.src.css, {base: srcPath + 'assets/scss/'})
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function (err) {
+            errorHandler : function(err) {
                 notify.onError({
-                    title: "SCSS Error",
-                    message: "Error: <%= error.message %>"
+                    title:    "SCSS Error",
+                    message:  "Error: <%= error.message %>"
                 })(err);
                 this.emit('end');
             }
@@ -119,20 +116,20 @@ function css(cb) {
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(path.build.css))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
 
 // Для быстрой компиляции CSS во время разработки
 function cssWatch(cb) {
-    return src(srcPath + 'assets/scss/main.scss') // если нужно компилировать 1 файл, то return src(srcPath + 'assets/scss/main.scss')
+    return src(srcPath + 'assets/scss/style.scss') // если порядок файлов не важен, то: return src(path.src.css, {base: srcPath + 'assets/scss/'})
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function (err) {
+            errorHandler : function(err) {
                 notify.onError({
-                    title: "SCSS Error",
-                    message: "Error: <%= error.message %>"
+                    title:    "SCSS Error",
+                    message:  "Error: <%= error.message %>"
                 })(err);
                 this.emit('end');
             }
@@ -147,7 +144,7 @@ function cssWatch(cb) {
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(path.build.css))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
@@ -157,10 +154,10 @@ function js(cb) {
     return src(jsFiles) // если порядок не важен, то берем все файлы: return src(path.src.js, {base: srcPath + 'assets/js/'})
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function (err) {
+            errorHandler : function(err) {
                 notify.onError({
-                    title: "JS Error",
-                    message: "Error: <%= error.message %>"
+                    title:    "JS Error",
+                    message:  "Error: <%= error.message %>"
                 })(err);
                 this.emit('end');
             }
@@ -171,7 +168,7 @@ function js(cb) {
         // }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(path.build.js))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
@@ -181,10 +178,10 @@ function jsWatch(cb) {
     return src(jsFiles) // если порядок не важен, то берем все файлы: return src(path.src.js, {base: srcPath + 'assets/js/'})
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function (err) {
+            errorHandler : function(err) {
                 notify.onError({
-                    title: "JS Error",
-                    message: "Error: <%= error.message %>"
+                    title:    "JS Error",
+                    message:  "Error: <%= error.message %>"
                 })(err);
                 this.emit('end');
             }
@@ -195,7 +192,7 @@ function jsWatch(cb) {
         // }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(path.build.js))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
@@ -204,9 +201,9 @@ function jsWatch(cb) {
 function images(cb) {
     return src(path.src.images)
         .pipe(imagemin([
-            imagemin.gifsicle({ interlaced: true }),
-            imagemin.mozjpeg({ quality: 95, progressive: true }),
-            imagemin.optipng({ optimizationLevel: 5 }),
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 95, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
                 plugins: [
                     { removeViewBox: true },
@@ -215,37 +212,16 @@ function images(cb) {
             })
         ]))
         .pipe(dest(path.build.images))
-        .pipe(browserSync.reload({ stream: true }));
-
-    cb();
-}
-
-// Video
-function video(cb) {
-    return src(path.src.video)
-        .pipe(dest(path.build.video))
         .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
-// gulp.task("video:build", function () {
-//     return src(path.src.video)
-//         .pipe(dest(path.build.video))
-//         .pipe(browserSync.reload({ stream: true }))
-// });
-
-// gulp.task("video:build", function () {
-//     return gulp.src(path.src.video)
-//         .pipe(gulp.dest(path.build.video))
-//         // .pipe(reload({stream:true}))
-//         .pipe(webserver.reload({ stream: true })); // перезагрузим сервер
-// });
 
 // Fonts
 function fonts(cb) {
     return src(path.src.fonts)
         .pipe(dest(path.build.fonts))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
@@ -262,12 +238,11 @@ function watchFiles() {
     gulp.watch([path.watch.css], cssWatch);
     gulp.watch([path.watch.js], jsWatch);
     gulp.watch([path.watch.images], images);
-    gulp.watch([path.watch.video], video);
     gulp.watch([path.watch.fonts], fonts);
 }
 
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, video, fonts)); // Будет запускаться по команде gulp build
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
 const watch = gulp.parallel(build, watchFiles, serve); // Будет запускаться по дефолтной команде gulp
 
 
@@ -276,7 +251,6 @@ exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
-exports.video = video;
 exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;

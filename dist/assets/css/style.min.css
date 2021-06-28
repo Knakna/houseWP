@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'NewYork';
+  src: url("./../../fonts/NewYorkExtraLargeBold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("./../../fonts/SFUIDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("./../../fonts/SFUIDisplay-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("./../../fonts/SFUIDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("./../../fonts/SFUIDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+body {
+  color: #252525;
+  font-family: SFUIDisplay;
+  font-family: NewYork; }
+
+/*# sourceMappingURL=style.min.css.map */
