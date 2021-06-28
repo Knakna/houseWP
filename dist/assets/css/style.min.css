@@ -28,9 +28,97 @@
   font-weight: 600;
   font-style: normal; }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  font-size: 10px; }
+
 body {
-  color: #252525;
-  font-family: SFUIDisplay;
-  font-family: NewYork; }
+  min-width: 320px;
+  font-family: SFUIDisplay, sans-serif; }
+
+.logo__img {
+  width: 6rem;
+  height: 2.8rem;
+  fill: #FD665E; }
+
+.btn {
+  padding: 1rem;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #FD665E;
+  border: none;
+  cursor: pointer; }
+
+.header {
+  padding: 2rem 0; }
+
+.header__container {
+  width: 144rem;
+  max-width: 100%;
+  padding: 0 5rem;
+  margin: 0 auto; }
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__links {
+  display: flex;
+  align-items: center; }
+
+.header__logo {
+  margin-right: 6.2rem; }
+
+.header__nav {
+  display: block; }
+
+.header__list {
+  display: flex;
+  align-items: center; }
+
+.header__item:not(:last-of-type) {
+  margin: 0 4.7rem 0 0; }
+
+.header__link {
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: 2.8;
+  letter-spacing: 0.01em;
+  color: #585858; }
+
+.header__btns {
+  display: flex;
+  align-items: center; }
+
+.header__search-btn {
+  margin-right: 2.7rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
+.header__search {
+  width: 1.8rem;
+  height: 1.8rem; }
+
+.header__btn {
+  min-width: 10rem;
+  min-height: 5rem;
+  background-color: transparent;
+  color: #585858; }
+
+.header__btn.active {
+  min-width: 10rem;
+  min-height: 5rem;
+  background-color: #FD665E;
+  color: #fff; }
 
 /*# sourceMappingURL=style.min.css.map */

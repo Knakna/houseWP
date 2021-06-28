@@ -1,0 +1,8 @@
+@function px-to-rem($px-val) {
+  $rem: $px-val/10;
+  @return ($rem * 1rem);
+}
+
+// font-size: px-to-rem(12);
+
+

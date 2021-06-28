@@ -1,10 +1,29 @@
 @import "./abstracts/fonts";
+@import "./abstracts/vars";
+@import "./abstracts/mixins";
 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html {
+    font-size: 10px;
+}
 
 
 body {
-    color: rgb(37, 37, 37);
-    font-family: SFUIDisplay;
-    font-family: NewYork;
-    // font-weight: 700;
+    min-width: 320px;
+
+    font-family: SFUIDisplay, sans-serif;
 }
+
+@import "./components/logo";
+@import "./components/btn";
+@import "./blocks/header";
