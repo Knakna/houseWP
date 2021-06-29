@@ -1,0 +1,44 @@
+.archmove {
+    padding: 6rem 0;
+}
+
+.archmove__title {
+    max-width: 36rem;
+
+    margin-bottom: 4rem;
+}
+
+.archmove__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.archmove__desc {
+    max-width: 44rem;
+
+    padding: 3.5rem 4rem 5rem 10rem;
+
+    position: relative;
+
+    background: url(./../images/archmove/icon1.svg) no-repeat 6% 7%, url(./../images/archmove/icon2.svg) no-repeat 7% 35%, url(./../images/archmove/icon3.svg) no-repeat 7% 60%;
+}
+
+.archmove__caption {
+    margin: 0 0 1rem 1rem;
+
+    font-size: px-to-rem(16);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.archmove__text {
+    margin: 0 0 5rem 1rem;
+}
+
+.archmove__btn {
+    margin-top: 2rem;
+
+    min-width: 17.5rem;
+    min-height: 5.5rem;
+}
