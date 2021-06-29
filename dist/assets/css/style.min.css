@@ -1,29 +1,34 @@
 @font-face {
   font-family: 'NewYork';
+  font-display: swap;
   src: url("./../../fonts/NewYorkExtraLargeBold.otf") format("otf");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
@@ -224,6 +229,60 @@ body {
 .archmove__btn {
   margin-top: 2rem;
   min-width: 17.5rem;
+  min-height: 5.5rem; }
+
+.reviews {
+  padding: 5rem 0; }
+
+.reviews__title {
+  max-width: 38rem;
+  margin-bottom: 3rem; }
+
+.reviews__blockquote {
+  margin-bottom: 6rem;
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em; }
+
+.reviews__author {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em; }
+
+.reviews__name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.01em; }
+
+.swiper-container {
+  width: 87rem;
+  margin-right: 0;
+  padding: 0 0 0 11rem; }
+
+.swiper-button-next::before {
+  display: none; }
+
+.realize {
+  padding: 5rem 0;
+  margin-top: 9rem;
+  min-height: 69rem;
+  background: url(./../images/realizeBg.png) no-repeat; }
+
+.realize__wrapper {
+  margin-left: auto;
+  padding-top: 18rem;
+  max-width: 53.5rem; }
+
+.realize__title {
+  margin-bottom: 5.5rem; }
+
+.realize__color {
+  color: #FD665E; }
+
+.realize__btn {
+  min-width: 20.5rem;
   min-height: 5.5rem; }
 
 /*# sourceMappingURL=style.min.css.map */

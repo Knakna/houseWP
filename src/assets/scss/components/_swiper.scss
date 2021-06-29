@@ -1,0 +1,12 @@
+.swiper-container {
+    width: 87rem;
+
+    margin-right: 0;
+    padding: 0 0 0 11rem;
+  }
+
+  .swiper-button-next {
+    &::before {
+      display: none;
+    }
+  }

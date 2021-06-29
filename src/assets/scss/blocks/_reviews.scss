@@ -1,0 +1,33 @@
+.reviews {
+    padding: 5rem 0;
+}
+
+.reviews__title {
+    max-width: 38rem;
+
+    margin-bottom: 3rem;
+}
+
+.reviews__blockquote {
+    margin-bottom: 6rem;
+
+    font-size: px-to-rem(32);
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+
+
+.reviews__author {
+    font-size: px-to-rem(16);
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.reviews__name {
+    font-size: px-to-rem(16);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}

@@ -1,0 +1,28 @@
+.realize {
+    padding: 5rem 0;
+    margin-top: 9rem;
+
+    min-height: 69rem;
+
+    background: url(./../images/realizeBg.png) no-repeat;
+}
+
+.realize__wrapper {
+    margin-left: auto;
+    padding-top: 18rem;
+
+    max-width: 53.5rem;
+}
+
+.realize__title {
+    margin-bottom: 5.5rem;
+}
+
+.realize__color {
+    color: $accentColor;
+}
+
+.realize__btn {
+    min-width: 20.5rem;
+    min-height: 5.5rem;
+}

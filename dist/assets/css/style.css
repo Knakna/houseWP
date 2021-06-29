@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'NewYork';
+    font-display: swap;
     src: url("./../../fonts/NewYorkExtraLargeBold.otf") format("otf");
     font-weight: 700;
     font-style: normal;
@@ -7,6 +8,7 @@
 
 @font-face {
     font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -14,6 +16,7 @@
 
 @font-face {
     font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -21,6 +24,7 @@
 
 @font-face {
     font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -28,6 +32,7 @@
 
 @font-face {
     font-family: 'SFUIDisplay';
+  font-display: swap;
   src: url("./../../fonts/SFUIDisplay-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -256,4 +261,88 @@ body {
 .archmove__wrap {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.archmove__desc {
+    max-width: 44rem;
+    padding: 3.5rem 4rem 5rem 10rem;
+    position: relative;
+    background: url(./../images/archmove/icon1.svg) no-repeat 6% 7%, url(./../images/archmove/icon2.svg) no-repeat 7% 35%, url(./../images/archmove/icon3.svg) no-repeat 7% 60%;
+}
+
+.archmove__caption {
+    margin: 0 0 1rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.archmove__text {
+    margin: 0 0 5rem 1rem;
+}
+
+.archmove__btn {
+    margin-top: 2rem;
+    min-width: 17.5rem;
+    min-height: 5.5rem;
+}
+
+.reviews {
+    padding: 5rem 0;
+}
+
+.reviews__title {
+    max-width: 38rem;
+    margin-bottom: 3rem;
+}
+
+.reviews__blockquote {
+    margin-bottom: 6rem;
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.reviews__author {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.reviews__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.swiper-container {
+    width: 87rem;
+    margin-right: 0;
+    padding: 0 0 0 11rem;
+}
+
+.swiper-button-next::before {
+    display: none;
+}
+
+.realize {
+    padding: 5rem 0;
+    margin-top: 9rem;
+    min-height: 69rem;
+    background: url(./../images/realizeBg.png) no-repeat;
+}
+
+.realize__wrapper {
+    margin-left: auto;
+    padding-top: 18rem;
+    max-width: 53.5rem;
+}
+
+.reviews__color {
+    color: #FD665E;
 }
