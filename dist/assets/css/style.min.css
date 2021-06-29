@@ -44,6 +44,12 @@ body {
   min-width: 320px;
   font-family: SFUIDisplay, sans-serif; }
 
+.container {
+  width: 111rem;
+  max-width: 100%;
+  padding: 0 5rem;
+  margin: 0 auto; }
+
 .logo__img {
   width: 6rem;
   height: 2.8rem;
@@ -53,6 +59,7 @@ body {
   padding: 1rem;
   border-radius: 4px;
   color: #fff;
+  text-transform: capitalize;
   background-color: #FD665E;
   border: none;
   cursor: pointer; }
@@ -120,5 +127,43 @@ body {
   min-height: 5rem;
   background-color: #FD665E;
   color: #fff; }
+
+.container {
+  width: 111rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em; }
+
+.main {
+  padding: 4rem 0; }
+
+.main__title {
+  max-width: 71rem;
+  margin-bottom: 4rem;
+  font-family: NewYork, serif;
+  font-weight: 700;
+  font-size: 11.2rem;
+  line-height: 1.05;
+  text-transform: capitalize; }
+
+.main__accent {
+  color: #FD665E;
+  letter-spacing: 1rem; }
+
+.main__wrap {
+  display: flex; }
+
+.main__text {
+  padding: 1rem 5rem 0 0;
+  margin-bottom: 5rem; }
+
+.main__btn {
+  min-width: 18rem;
+  min-height: 5.5rem; }
 
 /*# sourceMappingURL=style.min.css.map */
