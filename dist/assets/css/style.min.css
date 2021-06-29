@@ -139,6 +139,26 @@ body {
   line-height: 1.6;
   letter-spacing: 0.01em; }
 
+.title {
+  font-family: NewYork, serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em; }
+
+.room__gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+  grid-template-columns: repeat(3, 34rem); }
+
+.room__img {
+  display: block;
+  width: 34rem;
+  height: 43rem;
+  background: aqua; }
+
 .main {
   padding: 4rem 0; }
 
@@ -165,5 +185,13 @@ body {
 .main__btn {
   min-width: 18rem;
   min-height: 5.5rem; }
+
+.room {
+  padding: 6rem 0; }
+
+.room__title {
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+  text-align: center; }
 
 /*# sourceMappingURL=style.min.css.map */
