@@ -288,6 +288,7 @@ body {
     margin-top: 2rem;
     min-width: 17.5rem;
     min-height: 5.5rem;
+    text-transform: uppercase;
 }
 
 .reviews {
@@ -343,6 +344,16 @@ body {
     max-width: 53.5rem;
 }
 
-.reviews__color {
+.realize__title {
+    margin-bottom: 5.5rem;
+}
+
+.realize__color {
     color: #FD665E;
+}
+
+.realize__btn {
+    min-width: 20.5rem;
+    min-height: 5.5rem;
+    text-transform: uppercase;
 }

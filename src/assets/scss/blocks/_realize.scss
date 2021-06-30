@@ -4,7 +4,7 @@
 
     min-height: 69rem;
 
-    background: url(./../images/realizeBg.png) no-repeat;
+    background: url(./../images/realizeBg.png) no-repeat 5%;
 }
 
 .realize__wrapper {
@@ -25,4 +25,6 @@
 .realize__btn {
     min-width: 20.5rem;
     min-height: 5.5rem;
+
+    text-transform: uppercase;
 }

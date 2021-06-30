@@ -11,10 +11,25 @@
 .reviews__blockquote {
     margin-bottom: 6rem;
 
+    position: relative;
+
     font-size: px-to-rem(32);
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0.01em;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+
+        width: 6.8rem;
+        height: 4.1rem;
+
+        top: 12px;
+        left: -107px;
+        background: url(./../images/reviews/q.svg) no-repeat;
+    }
 }
 
 
