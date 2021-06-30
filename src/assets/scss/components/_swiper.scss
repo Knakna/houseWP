@@ -1,12 +1,43 @@
 .swiper-container {
-    width: 87rem;
+  width: 76rem;
+  margin-right: 0;
 
-    margin-right: 0;
-    padding: 0 0 0 11rem;
-  }
+}
+
+
+
+
 
   .swiper-button-next {
-    &::before {
-      display: none;
+    top: 80%;
+    right: 2%;
+
+    transform: rotate(180deg);
+
+    transition: .3s;
+
+    &:hover {
+      fill: $accentColor;
+      background-color: rgba(0, 0, 0, 0.03);
     }
   }
+
+  .swiper-button-prev {
+    top: 80%;
+    left: 88%;
+
+    transition: .3s;
+
+    &:hover {
+      fill: $accentColor;
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+  }
+
+  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    content: none;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  content: none;
+}

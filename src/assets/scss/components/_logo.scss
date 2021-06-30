@@ -3,4 +3,12 @@
     height: 2.8rem;
 
     fill: $accentColor;
+
+    &:hover {
+        fill: lighten($accentColor,10%);
+        }
+
+    &:active {
+        fill: darken($accentColor,10%);
+    }
 }

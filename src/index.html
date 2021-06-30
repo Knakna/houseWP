@@ -15,7 +15,7 @@
 <body>
 
     <!------------ header ------------>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__container">
             <div class="header__inner">
                 <div class="header__links">
@@ -96,13 +96,31 @@
                 Build professional valuable room for you
             </h2>
 
-            <div class="room__gallery">
-                <a class="room__img" href="./assets/images/room/img1.jpg"></a>
-                <a class="room__img" href="./assets/images/room/img2.jpg"></a>
-                <a class="room__img" href="./assets/images/room/img3.jpg"></a>
-                <a class="room__img" href="./assets/images/room/img4.jpg"></a>
-                <a class="room__img" href="./assets/images/room/img5.jpg"></a>
-                <a class="room__img" href="./assets/images/room/img6.jpg"></a>
+            <div class="room__gallery popup-gallery">
+                <a class="room__img" href="./assets/images/room/img1.jpg">
+                    <img src="./assets/images/room/img1.jpg" alt="image">
+                </a>
+
+                <a class="room__img" href="./assets/images/room/img2.jpg">
+                    <img src="./assets/images/room/img2.jpg" alt="image">
+                </a>
+
+                <a class="room__img" href="./assets/images/room/img3.jpg">
+                    <img src="./assets/images/room/img3.jpg" alt="image">
+                </a>
+
+                <a class="room__img" href="./assets/images/room/img4.jpg">
+                    <img src="./assets/images/room/img4.jpg" alt="image">
+                </a>
+
+                <a class="room__img" href="./assets/images/room/img5.jpg">
+                    <img src="./assets/images/room/img5.jpg" alt="image">
+                </a>
+
+                <a class="room__img" href="./assets/images/room/img6.jpg">
+                    <img src="./assets/images/room/img6.jpg" alt="image">
+                </a>
+
             </div>
 
         </div><!-- /.container -->
@@ -161,67 +179,74 @@
         <div class="container">
             <h2 class="reviews__title title">Sound Too Good To Be True?</h2>
 
-            <!----- swiper  ----->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <article class="reviews__article">
-                            <blockquote class="reviews__blockquote">
-                                We just wanted to thank you for this fantastic website! We are so grateful for being
-                                able to
-                                advertise our Petite cabin and receive feedback from people from all over the U.S. and
-                                even
-                                further.
-                            </blockquote>
-                            <cite class="reviews__author"><span class="reviews__name"> Adam Morph </span>— CEO A
-                                lfatech</cite>
-                        </article>
-                    </div> <!-- /.swiper-slide -->
+            <div class="reviews__wrap">
 
-                    <div class="swiper-slide">
-                        <article class="reviews__article">
-                            <blockquote class="reviews__blockquote">
-                                We just wanted to thank you for this fantastic website! We are so grateful for being
-                                able to
-                                advertise our Petite cabin and receive feedback from people from all over the U.S. and
-                                even
-                                further.
-                            </blockquote>
-                            <cite class="reviews__author"><span class="reviews__name"> Adam Morph </span>— CEO A
-                                lfatech</cite>
-                        </article>
-                    </div> <!-- /.swiper-slide -->
+                <!----- swiper  ----->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="reviews__article">
 
+                                <blockquote class="reviews__blockquote">
+                                    We just wanted to thank you for this fantastic website! We are so grateful for being
+                                    able to
+                                    advertise our Petite cabin and receive feedback from people from all over the U.S.
+                                    and
+                                    even
+                                    further.
+                                </blockquote>
+                                <cite class="reviews__author"><span class="reviews__name"> Adam Morph </span>— CEO A
+                                    lfatech</cite>
+                            </article>
 
-                    <div class="swiper-slide">
-                        <article class="reviews__article">
-                            <blockquote class="reviews__blockquote">
-                                We just wanted to thank you for this fantastic website! We are so grateful for being
-                                able to
-                                advertise our Petite cabin and receive feedback from people from all over the U.S. and
-                                even
-                                further.
-                            </blockquote>
-                            <cite class="reviews__author"><span class="reviews__name"> Adam Morph </span>— CEO A
-                                lfatech</cite>
-                        </article>
-                    </div> <!-- /.swiper-slide -->
+                        </div> <!-- /.swiper-slide -->
 
-                </div> <!-- /.swiper-wrapper -->
+                        <div class="swiper-slide">
+                            <article class="reviews__article">
+                                <blockquote class="reviews__blockquote">
+                                    We just wanted to thank you for this fantastic website! We are so grateful for being
+                                    able to
+                                    advertise our Petite cabin and receive feedback from people from all over the U.S.
+                                    and
+                                    even
+                                    further.
+                                </blockquote>
+                                <cite class="reviews__author"><span class="reviews__name"> Adam Morph </span>— CEO A
+                                    lfatech</cite>
+                            </article>
+                        </div> <!-- /.swiper-slide -->
 
 
-                <div class="swiper-button-prev">
-                    <svg viewBox="0 0 20 20">
-                        <use xlink:href="./assets/images/sprite.svg#arrow"></use>
-                    </svg>
+                        <div class="swiper-slide">
+                            <article class="reviews__article">
+                                <blockquote class="reviews__blockquote">
+                                    We just wanted to thank you for this fantastic website! We are so grateful for being
+                                    able to
+                                    advertise our Petite cabin and receive feedback from people from all over the U.S.
+                                    and
+                                    even
+                                    further.
+                                </blockquote>
+                                <cite class="reviews__author"><span class="reviews__name"> Adam Morph </span>— CEO A
+                                    lfatech</cite>
+                            </article>
+                        </div> <!-- /.swiper-slide -->
+
+                    </div> <!-- /.swiper-wrapper -->
+
+
+                    <div class="swiper-button-prev">
+                        <svg viewBox="0 0 20 20">
+                            <use xlink:href="./assets/images/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg viewBox="0 0 20 20">
+                            <use xlink:href="./assets/images/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+
                 </div>
-                <div class="swiper-button-next">
-                    <svg viewBox="0 0 20 20">
-                        <use xlink:href="./assets/images/sprite.svg#arrow"></use>
-                    </svg>
-                </div>
-
-
             </div><!-- /.container -->
     </section><!-- /.reviews -->
 
@@ -279,7 +304,7 @@
                     </li>
                 </ul>
 
-                <a class="footer__logo logo" href="#">
+                <a class="footer__logo logo" href="#header">
                     <svg class="logo__img">
                         <use xlink:href="assets/images/sprite.svg#logo"> </use>
                     </svg>

@@ -6,4 +6,14 @@
     background-color: $accentColor;
     border: none;
     cursor: pointer;
+
+    transition: .3s;
+
+    &:hover {
+        background-color: lighten($accentColor,10%);
+        }
+
+    &:active {
+        background-color: darken($accentColor,10%);
+    }
 }

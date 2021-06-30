@@ -70,6 +70,14 @@ body {
     fill: #FD665E;
 }
 
+.logo__img:hover {
+    fill: #fe9690;
+}
+
+.logo__img:active {
+    fill: #fc362c;
+}
+
 .btn {
     padding: 1rem;
     border-radius: 4px;
@@ -78,6 +86,15 @@ body {
     background-color: #FD665E;
     border: none;
     cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #fe9690;
+}
+
+.btn:active {
+    background-color: #fc362c;
 }
 
 .header {
@@ -132,6 +149,15 @@ body {
     line-height: 2.8;
     letter-spacing: 0.01em;
     color: #585858;
+    transition: .3s;
+}
+
+.header__link:hover {
+    color: #fd7e77;
+}
+
+.header__link:active {
+    color: #fd4e45;
 }
 
 .header__btns {
@@ -153,11 +179,29 @@ body {
     height: 1.8rem;
 }
 
+.header__search:hover {
+    fill: #fd7e77;
+}
+
+.header__search:active {
+    fill: #fd4e45;
+}
+
 .header__btn {
     min-width: 10rem;
     min-height: 5rem;
     background-color: transparent;
     color: #585858;
+    transition: .3s;
+}
+
+.header__btn:hover {
+    background-color: #fe9690;
+    color: white;
+}
+
+.header__btn:active {
+    background-color: #fc362c;
 }
 
 .header__btn.active {
@@ -165,6 +209,15 @@ body {
     min-height: 5rem;
     background-color: #FD665E;
     color: #fff;
+}
+
+.header__btn.active:hover {
+    background-color: #FD665E;
+    background-color: #fe9690;
+}
+
+.header__btn.active:active {
+    background-color: #fc362c;
 }
 
 .container {
@@ -228,7 +281,7 @@ body {
 
 .room__title {
     max-width: 50rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 3.5rem;
     text-align: center;
 }
 
@@ -267,7 +320,7 @@ body {
 
 .archmove__desc {
     max-width: 44rem;
-    padding: 3.5rem 4rem 5rem 10rem;
+    padding: 4.5rem 4rem 5rem 10rem;
     position: relative;
     background: url(./../images/archmove/icon1.svg) no-repeat 6% 7%, url(./../images/archmove/icon2.svg) no-repeat 7% 35%, url(./../images/archmove/icon3.svg) no-repeat 7% 60%;
 }
@@ -297,11 +350,19 @@ body {
 
 .reviews__title {
     max-width: 38rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
+}
+
+.reviews__wrap {
+    width: 88rem;
+    margin-left: auto;
+    background: url(./../images/reviews/q.svg) no-repeat;
 }
 
 .reviews__blockquote {
     margin-bottom: 6rem;
+    max-width: 75rem;
+    position: relative;
     font-size: 3.2rem;
     font-weight: 300;
     line-height: 1.6;
@@ -322,20 +383,47 @@ body {
 }
 
 .swiper-container {
-    width: 87rem;
+    width: 76rem;
     margin-right: 0;
-    padding: 0 0 0 11rem;
 }
 
-.swiper-button-next::before {
-    display: none;
+.swiper-button-next {
+    top: 80%;
+    right: 2%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: .3s;
+}
+
+.swiper-button-next:hover {
+    fill: #FD665E;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.swiper-button-prev {
+    top: 80%;
+    left: 88%;
+    transition: .3s;
+}
+
+.swiper-button-prev:hover {
+    fill: #FD665E;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    content: none;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    content: none;
 }
 
 .realize {
     padding: 5rem 0;
     margin-top: 9rem;
     min-height: 69rem;
-    background: url(./../images/realizeBg.png) no-repeat;
+    background: url(./../images/realizeBg.png) no-repeat 5%;
 }
 
 .realize__wrapper {
@@ -356,4 +444,61 @@ body {
     min-width: 20.5rem;
     min-height: 5.5rem;
     text-transform: uppercase;
+}
+
+.partners {
+    padding: 12rem 0;
+}
+
+.partners__title {
+    margin-bottom: 5.5rem;
+}
+
+.partners__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.del {
+    height: 100vh;
+}
+
+.footer {
+    padding: 8rem 0;
+}
+
+.footer__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 4.5rem;
+}
+
+.footer__link {
+    color: #585858;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 3.3;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer__link:hover {
+    color: #fd7e77;
+}
+
+.footer__link:active {
+    color: #fd4e45;
 }

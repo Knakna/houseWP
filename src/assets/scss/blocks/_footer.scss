@@ -22,4 +22,14 @@
     line-height: 3.3;
     letter-spacing: 0.01em;
     text-transform: capitalize;
+
+    transition: .3s;
+
+    &:hover {
+        color: lighten($accentColor,5%);
+        }
+
+    &:active {
+        color: darken($accentColor,5%);
+    }
 }
