@@ -1,4 +1,3 @@
-// @import "./mixins";
 
 // Colors
 $accentColor: #FD665E;
@@ -13,40 +12,3 @@ $linkColor: #585858;
 //     md: 80rem, // 1280
 //     lg: 90rem); // 1440
 
-// Container
-// %container {
-//     width: 100%;
-//     padding: 0 15px;
-
-//     @include media(xs) {
-//         padding: 0 35px;
-//     }
-
-//     @include media(sm) {
-//         padding: 0 50px;
-//     }
-
-//     @include media(md) {
-//         padding: 0;
-//         width: 1140px;
-//         margin: 0 auto;
-//     }
-// }
-
-// @extend %container;
-
-// title
-// %title {
-//     @include text(28px, 400, 1.2, $textColor);
-
-//     text-align: center;
-// }
-// @extend %title; 
-
-
-// %btn {
-//     border: none;
-//     background-color: transparent;
-//     cursor: pointer;
-// }
-//@extend %btn;

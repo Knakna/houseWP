@@ -1,50 +1,3 @@
-//  initialize swiper
-
-const swiper = new Swiper('.swiper-container', {
-
-    loop: true,
-
-
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-
-
-  });
-
-
-  // Initializing popup
-
-  $(document).ready(function() {
-    $('.room__gallery').magnificPopup({
-      delegate: 'a',
-      type: 'image',
-      tLoading: 'Loading image #%curr%...',
-      mainClass: 'mfp-img-mobile',
-      gallery: {
-        enabled: true,
-        navigateByImgClick: true,
-        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-      },
-      image: {
-        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-        titleSrc: function(item) {
-          return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-        }
-      }
-    });
-  });
-
-
-
-
-
-
-
-
 /*! Magnific Popup - v1.1.0 - 2016-02-20
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2016 Dmitry Semenov; */
@@ -1906,6 +1859,3 @@ const swiper = new Swiper('.swiper-container', {
     /*>>retina*/
     _checkInstance();
 }));
-
-
-//# sourceMappingURL=script.js.map

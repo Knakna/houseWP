@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper-container', {
   // Initializing popup
 
   $(document).ready(function() {
-    $('.popup-gallery').magnificPopup({
+    $('.room__gallery').magnificPopup({
       delegate: 'a',
       type: 'image',
       tLoading: 'Loading image #%curr%...',
@@ -44,4 +44,3 @@ const swiper = new Swiper('.swiper-container', {
 
 
 
-  

@@ -14,9 +14,9 @@
 .room__gallery {
     display: grid;
     justify-content: center;
-  align-items: center;
-  gap: 4.5rem;
-  grid-template-columns: repeat(3, 34rem);
+    align-items: center;
+    gap: 4.5rem;
+    grid-template-columns: repeat(3, 34rem);
 }
 
 .room__img {
@@ -25,5 +25,9 @@
     width: 34rem;
     height: 43rem;
     background: aqua;
-}
 
+    &:hover {
+
+        transform: scale(1.1);
+    }
+}
