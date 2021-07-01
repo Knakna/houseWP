@@ -315,6 +315,12 @@ img.mfp-img {
   box-sizing: border-box;
   padding: 40px 0 40px;
   margin: 0 auto;
+
+  @include media(md) {
+    width: 70vw;
+    height: auto;
+     }
+
 }
 
 /* The shadow behind the image */

@@ -1,5 +1,9 @@
 .room {
     padding: 6rem 0;
+
+    @include media(lg) {
+        padding: 3rem 0;
+    }
 }
 
 .room__title {
@@ -8,6 +12,10 @@
     margin: 0 auto 3.5rem;
 
     text-align: center;
+
+    @include media(lg) {
+        margin-bottom: 2.5rem;
+    }
 }
 
 
@@ -16,7 +24,9 @@
     justify-content: center;
     align-items: center;
     gap: 4.5rem;
-    grid-template-columns: repeat(3, 34rem);
+    grid-template-columns: repeat(auto-fit, 34rem);
+
+    overflow: hidden;
 }
 
 .room__img {
@@ -31,4 +41,12 @@
 
         transform: scale(1.1);
     }
+
+    &:not(:first-child) {
+        @media only screen and (max-width: 782px) {
+
+            display: none;
+        }
+    }
+
 }

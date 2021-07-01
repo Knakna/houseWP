@@ -320,6 +320,10 @@ img.mfp-img {
   box-sizing: border-box;
   padding: 40px 0 40px;
   margin: 0 auto; }
+  @media (max-width: 48rem) {
+    img.mfp-img {
+      width: 70vw;
+      height: auto; } }
 
 /* The shadow behind the image */
 .mfp-figure {
@@ -723,6 +727,9 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: 0.01em; }
+  @media (max-width: 62rem) {
+    .text {
+      font-size: 2rem; } }
 
 .title {
   font-family: NewYork, serif;
@@ -730,9 +737,16 @@ body {
   font-size: 4.8rem;
   line-height: 1.4;
   letter-spacing: 0.01em; }
+  @media (max-width: 36rem) {
+    .title {
+      font-size: 3.8rem;
+      line-height: 1.1; } }
 
 .main {
   padding: 4rem 0; }
+  @media (max-width: 36rem) {
+    .main {
+      padding: 3rem 0; } }
 
 .main__title {
   max-width: 71rem;
@@ -750,6 +764,7 @@ body {
       line-height: .9; } }
   @media (max-width: 36rem) {
     .main__title {
+      max-width: 45rem;
       font-size: 6rem; } }
 
 .main__accent {
@@ -765,7 +780,7 @@ body {
 .main__text {
   padding: 1rem 5rem 0 0;
   margin-bottom: 5rem; }
-  @media (max-width: 80rem) {
+  @media (max-width: 75rem) {
     .main__text {
       padding-right: 2rem;
       margin-bottom: 2rem; } }
@@ -773,36 +788,44 @@ body {
 .main__btn {
   min-width: 18rem;
   min-height: 5.5rem; }
-  @media (max-width: 80rem) {
+  @media (max-width: 75rem) {
     .main__btn {
       min-width: 12rem;
       min-height: 5rem; } }
+  @media (max-width: 36rem) {
+    .main__btn {
+      min-width: 100%; } }
 
 @media (max-width: 62rem) {
   .main__wrap-img {
     margin-bottom: 3rem; } }
 
-.main__img {
-  width: 100%;
-  height: auto; }
-  @media (max-width: 62rem) {
-    .main__img {
-      width: 100%; } }
+@media (max-width: 62rem) {
+  .main__img {
+    width: 100%;
+    height: auto; } }
 
 .room {
   padding: 6rem 0; }
+  @media (max-width: 62rem) {
+    .room {
+      padding: 3rem 0; } }
 
 .room__title {
   max-width: 50rem;
   margin: 0 auto 3.5rem;
   text-align: center; }
+  @media (max-width: 62rem) {
+    .room__title {
+      margin-bottom: 2.5rem; } }
 
 .room__gallery {
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 4.5rem;
-  grid-template-columns: repeat(3, 34rem); }
+  grid-template-columns: repeat(auto-fit, 34rem);
+  overflow: hidden; }
 
 .room__img {
   display: block;
@@ -812,6 +835,9 @@ body {
   .room__img:hover {
     cursor: zoom-in;
     transform: scale(1.1); }
+  @media only screen and (max-width: 782px) {
+    .room__img:not(:first-child) {
+      display: none; } }
 
 .archmove {
   padding: 6rem 0; }
