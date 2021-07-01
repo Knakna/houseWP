@@ -11,6 +11,30 @@
 .archmove__wrap {
     display: flex;
     justify-content: space-between;
+
+    @include media(lg) {
+        flex-direction: column;
+    }
+}
+
+.archmove__wrap-img {
+    max-width: 53.5rem;
+
+    @include media(lg) {
+        max-width: 100%;
+    }
+}
+
+.archmove__img {
+    width: 100%;
+
+    @include media(lg) {
+        width: 100%;
+        height: 38rem;
+
+        object-fit: cover;
+        object-position: 0 40%;
+    }
 }
 
 .archmove__desc {
@@ -21,6 +45,23 @@
     position: relative;
 
     background: url(./../images/archmove/icon1.svg) no-repeat 6% 7%, url(./../images/archmove/icon2.svg) no-repeat 7% 35%, url(./../images/archmove/icon3.svg) no-repeat 7% 60%;
+
+    @include media(lg) {
+        padding: 2rem 2rem 2rem 10rem;
+
+        width: 52rem;
+
+        background: url(./../images/archmove/icon1.svg) no-repeat 8% 12%, url(./../images/archmove/icon2.svg) no-repeat 8% 42%, url(./../images/archmove/icon3.svg) no-repeat 8% 68%;
+    }
+
+    @include media(sm) {
+    width: unset;
+
+    padding: 2rem;
+
+    background: white;
+
+       }
 }
 
 .archmove__caption {
@@ -30,10 +71,18 @@
     font-weight: 700;
     line-height: 1.6;
     letter-spacing: 0.01em;
+
+    @include media(xl) {
+        font-size: px-to-rem(17);
+    }
 }
 
 .archmove__text {
     margin: 0 0 5rem 1rem;
+
+    @include media(xl) {
+        margin-bottom: 2rem;
+    }
 }
 
 .archmove__btn {
@@ -43,4 +92,8 @@
     min-height: 5.5rem;
 
     text-transform: uppercase;
+
+    @include media(sm) {
+        width: 100%;
+    }
 }

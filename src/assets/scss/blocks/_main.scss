@@ -3,7 +3,6 @@
 
     @include media(sm) {
         padding: 3rem 0;
-
     }
 }
 
@@ -69,9 +68,7 @@
     @include media(sm) {
         min-width: 100%;
     }
-
 }
-
 
 
 .main__wrap-img {
@@ -85,6 +82,4 @@
         width: 100%;
         height: auto;
     }
-
-
 }
