@@ -1,5 +1,5 @@
 .swiper-container {
-  width: 76rem;
+  max-width: 76rem;
   margin-right: 0;
 
 }
@@ -12,6 +12,11 @@
 
     transition: .3s;
 
+    @include media(lg) {
+      top: 95%;
+    right: 1%;
+      }
+
     &:hover {
       fill: $accentColor;
       background-color: rgba(0, 0, 0, 0.03);
@@ -23,6 +28,11 @@
     left: 88%;
 
     transition: .3s;
+
+    @include media(lg) {
+      top: 95%;
+    left: 1%;
+      }
 
     &:hover {
       fill: $accentColor;

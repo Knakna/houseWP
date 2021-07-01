@@ -1,12 +1,21 @@
 .archmove {
     padding: 6rem 0;
+
+    @include media(xl) {
+        padding: 3rem 0;
+    }
 }
 
 .archmove__title {
     max-width: 36rem;
 
     margin-bottom: 4rem;
+
+    @include media(xl) {
+        padding-top: 2.5rem;
+    }
 }
+
 
 .archmove__wrap {
     display: flex;
@@ -55,13 +64,13 @@
     }
 
     @include media(sm) {
-    width: unset;
+        width: unset;
 
-    padding: 2rem;
+        padding: 2rem;
 
-    background: white;
+        background: white;
 
-       }
+    }
 }
 
 .archmove__caption {

@@ -9,9 +9,7 @@
 .room__title {
     max-width: 50rem;
 
-    margin: 0 auto 3.5rem;
-
-    text-align: center;
+    margin-bottom: 3.5rem;
 
     @include media(lg) {
         margin-bottom: 2.5rem;

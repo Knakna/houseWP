@@ -423,7 +423,7 @@ img.mfp-img {
     padding-right: 6px; } }
 
 .swiper-container {
-  width: 76rem;
+  max-width: 76rem;
   margin-right: 0; }
 
 .swiper-button-next {
@@ -431,6 +431,10 @@ img.mfp-img {
   right: 2%;
   transform: rotate(180deg);
   transition: .3s; }
+  @media (max-width: 62rem) {
+    .swiper-button-next {
+      top: 95%;
+      right: 1%; } }
   .swiper-button-next:hover {
     fill: #FD665E;
     background-color: rgba(0, 0, 0, 0.03); }
@@ -439,6 +443,10 @@ img.mfp-img {
   top: 94%;
   left: 88%;
   transition: .3s; }
+  @media (max-width: 62rem) {
+    .swiper-button-prev {
+      top: 95%;
+      left: 1%; } }
   .swiper-button-prev:hover {
     fill: #FD665E;
     background-color: rgba(0, 0, 0, 0.03); }
@@ -813,8 +821,7 @@ body {
 
 .room__title {
   max-width: 50rem;
-  margin: 0 auto 3.5rem;
-  text-align: center; }
+  margin-bottom: 3.5rem; }
   @media (max-width: 62rem) {
     .room__title {
       margin-bottom: 2.5rem; } }
@@ -841,10 +848,16 @@ body {
 
 .archmove {
   padding: 6rem 0; }
+  @media (max-width: 75rem) {
+    .archmove {
+      padding: 3rem 0; } }
 
 .archmove__title {
   max-width: 36rem;
   margin-bottom: 4rem; }
+  @media (max-width: 75rem) {
+    .archmove__title {
+      padding-top: 2.5rem; } }
 
 .archmove__wrap {
   display: flex;
@@ -911,15 +924,29 @@ body {
 
 .reviews {
   padding: 5rem 0; }
+  @media (max-width: 75rem) {
+    .reviews {
+      padding: 3rem 0; } }
 
 .reviews__title {
   max-width: 38rem;
   margin-bottom: 4.5rem; }
+  @media (max-width: 62rem) {
+    .reviews__title {
+      margin-bottom: 2.5rem; } }
 
 .reviews__wrap {
-  width: 88rem;
+  max-width: 88rem;
   margin-left: auto;
   background: url(./../images/reviews/q.svg) no-repeat; }
+  @media (max-width: 62rem) {
+    .reviews__wrap {
+      padding: 5rem 2rem 3rem; } }
+
+@media (max-width: 62rem) {
+  .reviews__article {
+    padding-bottom: 8rem;
+    text-align-last: center; } }
 
 .reviews__blockquote {
   margin-bottom: 6rem;
@@ -929,6 +956,12 @@ body {
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.01em; }
+  @media (max-width: 62rem) {
+    .reviews__blockquote {
+      margin-bottom: 3rem; } }
+  @media (max-width: 36rem) {
+    .reviews__blockquote {
+      font-size: 2.2rem; } }
 
 .reviews__author {
   font-size: 1.6rem;
