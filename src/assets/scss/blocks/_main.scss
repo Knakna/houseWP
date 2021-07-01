@@ -12,6 +12,19 @@
     font-size: px-to-rem(112);
     line-height: 1.05;
     text-transform: capitalize;
+
+    @include media(lg) {
+        max-width: 60rem;
+
+        margin-bottom: 3rem;
+
+        font-size: px-to-rem(80);
+        line-height: .9;
+    }
+
+    @include media(sm) {
+        font-size: px-to-rem(60);
+    }
 }
 
 .main__accent {
@@ -21,14 +34,52 @@
 
 .main__wrap {
     display: flex;
+
+    @include media(lg) {
+        flex-direction: column-reverse;
+    }
 }
 
 .main__text {
     padding: 1rem 5rem 0 0;
     margin-bottom: 5rem;
+
+    @include media(xl) {
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+
+    }
 }
 
 .main__btn {
     min-width: 18rem;
     min-height: 5.5rem;
+
+    @include media(xl) {
+        min-width: 12rem;
+        min-height: 5rem;
+
+
+    }
+
+}
+
+
+
+.main__wrap-img {
+    @include media(lg) {
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+.main__img {
+
+    width: 100%;
+    height: auto;
+
+    @include media(lg) {
+        width: 100%;
+    }
 }
