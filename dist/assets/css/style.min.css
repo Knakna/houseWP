@@ -894,7 +894,7 @@ body {
   @media (max-width: 36rem) {
     .archmove__desc {
       width: unset;
-      padding: 2rem;
+      padding: 2rem 0;
       background: white; } }
 
 .archmove__caption {
@@ -979,11 +979,20 @@ body {
   margin-top: 9rem;
   min-height: 69rem;
   background: url(./../images/realizeBg.png) no-repeat 12%; }
+  @media (max-width: 62rem) {
+    .realize {
+      padding: 3rem 0;
+      margin-top: 0;
+      background: url(./../images/realizeBg.png) no-repeat 94%; } }
 
-.realize__wrapper {
+.realize__wrap {
   margin-left: auto;
   padding-top: 18rem;
   max-width: 53.5rem; }
+  @media (max-width: 62rem) {
+    .realize__wrap {
+      margin-left: 0;
+      padding-top: 43rem; } }
 
 .realize__title {
   margin-bottom: 5.5rem; }
@@ -995,6 +1004,9 @@ body {
   min-width: 20.5rem;
   min-height: 5.5rem;
   text-transform: uppercase; }
+  @media (max-width: 36rem) {
+    .realize__btn {
+      width: 100%; } }
 
 .partners {
   padding: 12rem 0; }
