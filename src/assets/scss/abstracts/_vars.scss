@@ -1,14 +1,28 @@
 
 // Colors
 $accentColor: #FD665E;
-
 $textColor: #000;
 $linkColor: #585858;
 
-//Breakpoints
-// $breakpoints: (
-//     xs: 36rem, // 576
-//     sm: 48rem, // 768
-//     md: 80rem, // 1280
-//     lg: 90rem); // 1440
+
+
+// Breakpoints
+$breakpoints: (
+    xl: 80rem, // 1280
+    lg: 62rem, // 992
+    md: 48rem, // 768
+    sm: 36rem, // 576
+    xs: 20rem, // 320
+    );
+
+    //             @include media(lg) {    }
+
+//     $xll:1400px;
+// $xl:1200px;
+// $lg:992px;
+// $md:768px;
+// $sm:576px;
+// $xs:320px;
+
+
 
