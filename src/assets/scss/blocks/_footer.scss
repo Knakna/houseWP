@@ -1,14 +1,30 @@
 .footer {
     padding: 6rem 0;
+
+    @include media(lg) {
+        padding: 3rem 0;
+    }
 }
 
 .footer__wrap {
     display: flex;
     justify-content: space-between;
+
+    @include media(md) {
+        flex-direction: column-reverse;
+    }
 }
 
 .footer__list {
     display: flex;
+
+    @include media(md) {
+        justify-content: space-between;
+    }
+
+    @include media(sm) {
+        flex-direction: column;
+    }
 }
 
 .footer__item:not(:last-child) {
@@ -26,10 +42,10 @@
     transition: .3s;
 
     &:hover {
-        color: lighten($accentColor,5%);
-        }
+        color: lighten($accentColor, 5%);
+    }
 
     &:active {
-        color: darken($accentColor,5%);
+        color: darken($accentColor, 5%);
     }
 }

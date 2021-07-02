@@ -511,7 +511,7 @@ img.mfp-img {
 }
 
 .swiper-container {
-    width: 76rem;
+    max-width: 76rem;
     margin-right: 0;
 }
 
@@ -523,6 +523,13 @@ img.mfp-img {
     transition: .3s;
 }
 
+@media (max-width: 62rem) {
+    .swiper-button-next {
+        top: 95%;
+        right: 1%;
+    }
+}
+
 .swiper-button-next:hover {
     fill: #FD665E;
     background-color: rgba(0, 0, 0, 0.03);
@@ -532,6 +539,13 @@ img.mfp-img {
     top: 94%;
     left: 88%;
     transition: .3s;
+}
+
+@media (max-width: 62rem) {
+    .swiper-button-prev {
+        top: 95%;
+        left: 1%;
+    }
 }
 
 .swiper-button-prev:hover {
@@ -1070,8 +1084,7 @@ body {
 
 .room__title {
     max-width: 50rem;
-    margin: 0 auto 3.5rem;
-    text-align: center;
+    margin-bottom: 3.5rem;
 }
 
 @media (max-width: 62rem) {
@@ -1115,9 +1128,21 @@ body {
     padding: 6rem 0;
 }
 
+@media (max-width: 75rem) {
+    .archmove {
+        padding: 3rem 0;
+    }
+}
+
 .archmove__title {
     max-width: 36rem;
     margin-bottom: 4rem;
+}
+
+@media (max-width: 75rem) {
+    .archmove__title {
+        padding-top: 2.5rem;
+    }
 }
 
 .archmove__wrap {
@@ -1177,6 +1202,7 @@ body {
 @media (max-width: 36rem) {
     .archmove__desc {
         width: unset;
+        padding: 2rem 0;
         background: white;
     }
 }
@@ -1222,15 +1248,41 @@ body {
     padding: 5rem 0;
 }
 
+@media (max-width: 75rem) {
+    .reviews {
+        padding: 3rem 0;
+    }
+}
+
 .reviews__title {
     max-width: 38rem;
     margin-bottom: 4.5rem;
 }
 
+@media (max-width: 62rem) {
+    .reviews__title {
+        margin-bottom: 2.5rem;
+    }
+}
+
 .reviews__wrap {
-    width: 88rem;
+    max-width: 88rem;
     margin-left: auto;
     background: url(./../images/reviews/q.svg) no-repeat;
+}
+
+@media (max-width: 62rem) {
+    .reviews__wrap {
+        padding: 5rem 2rem 3rem;
+    }
+}
+
+@media (max-width: 62rem) {
+    .reviews__article {
+        padding-bottom: 8rem;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
 }
 
 .reviews__blockquote {
@@ -1241,6 +1293,18 @@ body {
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0.01em;
+}
+
+@media (max-width: 62rem) {
+    .reviews__blockquote {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 36rem) {
+    .reviews__blockquote {
+        font-size: 2.2rem;
+    }
 }
 
 .reviews__author {
@@ -1263,10 +1327,25 @@ body {
     background: url(./../images/realizeBg.png) no-repeat 12%;
 }
 
-.realize__wrapper {
+@media (max-width: 62rem) {
+    .realize {
+        padding: 3rem 0;
+        margin-top: 0;
+        background: url(./../images/realizeBg.png) no-repeat 94%;
+    }
+}
+
+.realize__wrap {
     margin-left: auto;
     padding-top: 18rem;
     max-width: 53.5rem;
+}
+
+@media (max-width: 62rem) {
+    .realize__wrap {
+        margin-left: 0;
+        padding-top: 43rem;
+    }
 }
 
 .realize__title {
@@ -1283,8 +1362,20 @@ body {
     text-transform: uppercase;
 }
 
+@media (max-width: 36rem) {
+    .realize__btn {
+        width: 100%;
+    }
+}
+
 .partners {
     padding: 12rem 0;
+}
+
+@media (max-width: 62rem) {
+    .partners {
+        padding: 5rem 0;
+    }
 }
 
 .partners__title {
@@ -1298,12 +1389,26 @@ body {
     justify-content: space-between;
 }
 
-.del {
-    height: 100vh;
+@media (max-width: 62rem) {
+    .partners__wrap {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 62rem) {
+    .partners__img:not(:last-child) {
+        padding-right: 4rem;
+    }
 }
 
 .footer {
     padding: 6rem 0;
+}
+
+@media (max-width: 62rem) {
+    .footer {
+        padding: 3rem 0;
+    }
 }
 
 .footer__wrap {
@@ -1313,9 +1418,30 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 48rem) {
+    .footer__wrap {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+}
+
 .footer__list {
     display: -ms-flexbox;
     display: flex;
+}
+
+@media (max-width: 48rem) {
+    .footer__list {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 36rem) {
+    .footer__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .footer__item:not(:last-child) {

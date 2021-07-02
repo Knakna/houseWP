@@ -1,19 +1,26 @@
 .partners {
     padding: 12rem 0;
+
+    @include media(lg) {
+        padding: 5rem 0;
+    }
 }
 
 .partners__title {
     margin-bottom: 5.5rem;
-
 }
 
 .partners__wrap {
     display: flex;
     justify-content: space-between;
+
+    @include media(lg) {
+        overflow: auto;
+    }
 }
 
-
-.del {
-    height: 100vh;
+.partners__img:not(:last-child) {
+    @include media(lg) {
+        padding-right: 4rem;
+    }
 }
-
