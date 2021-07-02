@@ -722,6 +722,12 @@ body {
     transition: .3s;
 }
 
+@media (max-width: 62rem) {
+    .header__link {
+        font-size: 2.9rem;
+    }
+}
+
 .header__link:hover {
     color: #fd7e77;
 }
@@ -1410,6 +1416,12 @@ body {
     }
 }
 
+@media (max-width: 36rem) {
+    .footer {
+        padding: 6rem 0;
+    }
+}
+
 .footer__wrap {
     display: -ms-flexbox;
     display: flex;
@@ -1457,10 +1469,23 @@ body {
     transition: .3s;
 }
 
+@media (max-width: 62rem) {
+    .footer__link {
+        font-size: 2.2rem;
+    }
+}
+
 .footer__link:hover {
     color: #fd7e77;
 }
 
 .footer__link:active {
     color: #fd4e45;
+}
+
+@media (max-width: 36rem) {
+    .footer__logo {
+        -webkit-transform: scale(1.5) translateX(5rem) translateY(-2rem);
+        transform: scale(1.5) translateX(5rem) translateY(-2rem);
+    }
 }

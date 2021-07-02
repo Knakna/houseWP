@@ -1066,7 +1066,7 @@ body {
   letter-spacing: 0.01em;
   text-transform: capitalize;
   transition: .3s; }
-  @media (max-width: 62rem) {
+  @media (max-width: 36rem) {
     .footer__link {
       font-size: 2.2rem; } }
   .footer__link:hover {
@@ -1075,7 +1075,9 @@ body {
     color: #fd4e45; }
 
 @media (max-width: 36rem) {
-  .footer__logo {
-    transform: scale(1.5) translateX(5rem) translateY(-2rem); } }
+  .footer__logo .logo__img {
+    width: 12rem;
+    height: 6rem;
+    margin-bottom: 2rem; } }
 
 /*# sourceMappingURL=style.min.css.map */
