@@ -4,6 +4,10 @@
     @include media(lg) {
         padding: 3rem 0;
     }
+
+    @include media(sm) {
+        padding: 6rem 0;
+    }
 }
 
 .footer__wrap {
@@ -41,11 +45,21 @@
 
     transition: .3s;
 
+    @include media(lg) {
+        font-size: px-to-rem(22);
+    }
+
     &:hover {
         color: lighten($accentColor, 5%);
     }
 
     &:active {
         color: darken($accentColor, 5%);
+    }
+}
+
+.footer__logo {
+    @include media(sm) {
+        transform: scale(1.5) translateX(5rem) translateY(-2rem);
     }
 }

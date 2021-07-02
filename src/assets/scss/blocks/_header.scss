@@ -99,6 +99,10 @@
 
     transition: .3s;
 
+    @include media(lg) {
+        font-size: px-to-rem(29);
+    }
+
     &:hover {
         color: lighten($accentColor, 5%);
     }
