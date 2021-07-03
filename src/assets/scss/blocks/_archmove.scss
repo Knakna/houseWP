@@ -46,31 +46,41 @@
     }
 }
 
-.archmove__desc {
+.archmove__boxes {
     max-width: 44rem;
 
-    padding: 4.5rem 4rem 5rem 10rem;
-
-    position: relative;
-
-    background: url(./../images/archmove/icon1.svg) no-repeat 6% 7%, url(./../images/archmove/icon2.svg) no-repeat 7% 35%, url(./../images/archmove/icon3.svg) no-repeat 7% 60%;
+    padding: 4.5rem 3rem 5rem 3rem;
 
     @include media(lg) {
-        padding: 2rem 2rem 2rem 10rem;
-
         width: 52rem;
-
-        background: url(./../images/archmove/icon1.svg) no-repeat 8% 12%, url(./../images/archmove/icon2.svg) no-repeat 8% 42%, url(./../images/archmove/icon3.svg) no-repeat 8% 68%;
     }
 
     @include media(sm) {
         width: unset;
+        max-width: unset;
 
         padding: 2rem 0;
-
-        background: white;
-
     }
+}
+
+.archmove__box {
+    display: flex;
+
+    @include media(sm) {
+        flex-direction: column;
+    }
+}
+
+.archmove__wrap-icon {
+
+    @include media(sm) {
+        padding-left: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.archmove__desc {
+    padding-left: 3rem;
 }
 
 .archmove__caption {
@@ -95,7 +105,7 @@
 }
 
 .archmove__btn {
-    margin-top: 2rem;
+    margin: 2rem 0 0 8rem;
 
     min-width: 17.5rem;
     min-height: 5.5rem;
@@ -104,5 +114,7 @@
 
     @include media(sm) {
         width: 100%;
+
+        margin-left: 0;
     }
 }
