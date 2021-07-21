@@ -161,14 +161,9 @@
     }
 
     &:hover {
-        background-color: lighten($accentColor, 10%);
-
-        color: white;
+        background-color: transparent;
     }
 
-    &:active {
-        background-color: darken($accentColor, 10%);
-    }
 }
 
 .header__btn.active {
@@ -182,12 +177,4 @@
         min-height: 3rem;
     }
 
-    &:hover {
-        background-color: $accentColor;
-        background-color: lighten($accentColor, 10%);
-    }
-
-    &:active {
-        background-color: darken($accentColor, 10%);
-    }
 }

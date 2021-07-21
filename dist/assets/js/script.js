@@ -8,6 +8,13 @@ $(document).ready(function () {
 });
 
 
+// active class switching btns
+
+$('.header__btns').on('click', '.btn', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+
 // scroll-anchors-smooth
 
 let anchors = document.querySelectorAll('a[href*="#"]')
@@ -1944,5 +1951,8 @@ const swiper = new Swiper('.swiper-container', {
     _checkInstance();
 }));
 
+$('.header__btns').on('click', '.btn', function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
 
 //# sourceMappingURL=script.js.map

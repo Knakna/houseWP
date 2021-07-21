@@ -481,7 +481,7 @@ body {
   background-color: #FD665E;
   border: none;
   cursor: pointer;
-  transition: .3s; }
+  transition: .2s; }
   .btn:hover {
     background-color: #fe9690; }
   .btn:active {
@@ -606,10 +606,7 @@ body {
       min-width: 7rem;
       min-height: 3rem; } }
   .header__btn:hover {
-    background-color: #fe9690;
-    color: white; }
-  .header__btn:active {
-    background-color: #fc362c; }
+    background-color: transparent; }
 
 .header__btn.active {
   min-width: 10rem;
@@ -620,11 +617,6 @@ body {
     .header__btn.active {
       min-width: 7rem;
       min-height: 3rem; } }
-  .header__btn.active:hover {
-    background-color: #FD665E;
-    background-color: #fe9690; }
-  .header__btn.active:active {
-    background-color: #fc362c; }
 
 .burger {
   display: none;
