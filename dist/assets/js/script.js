@@ -1952,5 +1952,10 @@ const swiper = new Swiper('.swiper-container', {
     _checkInstance();
 }));
 
+// active class switching btns
+
+$('.header__btns').on('click', '.btn', function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
 
 //# sourceMappingURL=script.js.map

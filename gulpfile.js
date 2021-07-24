@@ -55,6 +55,7 @@ const path = {
 const jsFiles = [
     srcPath + 'assets/js/lib.js',
     srcPath + 'assets/js/magnific.js',
+    srcPath + 'assets/js/script.js',
     srcPath + 'assets/js/main.js'
 ]
 
