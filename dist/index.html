@@ -369,6 +369,12 @@
 
 
     <script src="assets/js/script.js"></script>
+    <script>
+        $('.header__btns').on('click', '.btn', function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    </script>
+
 </body>
 
 </html>

@@ -592,7 +592,7 @@ body {
     background-color: #FD665E;
     border: none;
     cursor: pointer;
-    transition: .3s;
+    transition: .2s;
 }
 
 .btn:hover {
@@ -792,12 +792,7 @@ body {
 }
 
 .header__btn:hover {
-    background-color: #fe9690;
-    color: white;
-}
-
-.header__btn:active {
-    background-color: #fc362c;
+    background-color: transparent;
 }
 
 .header__btn.active {
@@ -812,15 +807,6 @@ body {
         min-width: 7rem;
         min-height: 3rem;
     }
-}
-
-.header__btn.active:hover {
-    background-color: #FD665E;
-    background-color: #fe9690;
-}
-
-.header__btn.active:active {
-    background-color: #fc362c;
 }
 
 .burger {
@@ -1107,6 +1093,11 @@ body {
     align-items: center;
     gap: 4.5rem;
     grid-template-columns: repeat(auto-fit, 34rem);
+    overflow: hidden;
+}
+
+.room__wrap {
+    display: inline-block;
     overflow: hidden;
 }
 
