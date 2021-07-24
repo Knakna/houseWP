@@ -42,6 +42,7 @@ for (let anchor of anchors) {
 
 
 
+
 //  initialize swiper
 
 const swiper = new Swiper('.swiper-container', {

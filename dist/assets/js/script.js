@@ -42,6 +42,7 @@ for (let anchor of anchors) {
 
 
 
+
 //  initialize swiper
 
 const swiper = new Swiper('.swiper-container', {
@@ -1951,8 +1952,5 @@ const swiper = new Swiper('.swiper-container', {
     _checkInstance();
 }));
 
-$('.header__btns').on('click', '.btn', function() {
-    $(this).addClass('active').siblings().removeClass('active');
-  });
 
 //# sourceMappingURL=script.js.map
