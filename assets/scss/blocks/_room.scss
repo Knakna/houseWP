@@ -1,0 +1,53 @@
+.room {
+    padding: 6rem 0;
+
+    @include media(lg) {
+        padding: 3rem 0;
+    }
+}
+
+.room__title {
+    max-width: 50rem;
+
+    margin-bottom: 3.5rem;
+
+    @include media(lg) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.room__gallery {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+    grid-template-columns: repeat(auto-fit, 34rem);
+
+    overflow: hidden;
+}
+
+.room__wrap {
+    display: inline-block;
+
+    overflow: hidden;
+}
+
+.room__img {
+    display: block;
+
+    width: 34rem;
+    height: 43rem;
+
+    &:hover {
+        cursor: zoom-in;
+
+        transform: scale(1.1);
+    }
+
+    &:not(:first-child) {
+        @media only screen and (max-width: 782px) {
+
+            display: none;
+        }
+    }
+}

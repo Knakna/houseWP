@@ -1,0 +1,9 @@
+.text {
+font-size: px-to-rem(16);
+line-height: 1.6;
+letter-spacing: 0.01em;
+
+@include media(lg) {
+    font-size: px-to-rem(20);
+}
+}

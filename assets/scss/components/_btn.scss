@@ -1,0 +1,19 @@
+.btn {
+    padding: 1rem;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: $accentColor;
+    border: none;
+    cursor: pointer;
+
+    transition: .2s;
+
+    &:hover {
+        background-color: lighten($accentColor,10%);
+        }
+
+    &:active {
+        background-color: darken($accentColor,10%);
+    }
+}

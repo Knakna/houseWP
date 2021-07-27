@@ -1,0 +1,44 @@
+@import "./abstracts/vars";
+@import "./abstracts/mixins";
+@import "./base/fonts";
+@import "./base/normalize";
+
+@import "./libs/magnific";
+@import "./libs/swiper";
+
+
+
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    min-width: 320px;
+
+    font-family: SFUIDisplay, sans-serif;
+}
+
+// .del {
+//     height: 100vh;
+// }
+
+
+@import "./components/logo";
+@import "./components/btn";
+@import "./blocks/header";
+@import "./components/burger";
+@import "./bem/container";
+@import "./bem/text";
+@import "./bem/title";
+@import "./blocks/main";
+@import "./blocks/room";
+@import "./blocks/archmove";
+@import "./blocks/reviews";
+@import "./blocks/realize";
+@import "./blocks/partners";
+@import "./blocks/footer";
+
+
+

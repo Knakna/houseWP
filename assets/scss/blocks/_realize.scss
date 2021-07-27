@@ -1,0 +1,46 @@
+.realize {
+    padding: 5rem 0;
+    margin-top: 9rem;
+
+    min-height: 69rem;
+
+    background: url(./../images/realizeBg.png) no-repeat 12%;
+
+    @include media(lg) {
+        padding: 3rem 0;
+        margin-top: 0;
+
+        background: url(./../images/realizeBg.png) no-repeat 94%;
+    }
+}
+
+.realize__wrap {
+    margin-left: auto;
+    padding-top: 18rem;
+
+    max-width: 53.5rem;
+
+    @include media(lg) {
+        margin-left: 0;
+        padding-top: 43rem;
+    }
+}
+
+.realize__title {
+    margin-bottom: 5.5rem;
+}
+
+.realize__color {
+    color: $accentColor;
+}
+
+.realize__btn {
+    min-width: 20.5rem;
+    min-height: 5.5rem;
+
+    text-transform: uppercase;
+
+    @include media(sm) {
+        width: 100%;
+    }
+}
