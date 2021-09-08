@@ -28,23 +28,29 @@
 }
 
 .reviews__article {
+    padding-left: 110px;
+
     @include media(lg) {
         padding-bottom: 8rem;
 
         text-align-last: center;
+    }
+
+    @include media(sm) {
+        padding-left: 3rem;
     }
 }
 
 .reviews__blockquote {
     margin-bottom: 6rem;
 
-    max-width: 75rem;
+    max-width: 90rem;
 
     position: relative;
 
     font-size: px-to-rem(32);
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.5;
     letter-spacing: 0.01em;
 
     @include media(lg) {
